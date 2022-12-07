@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var message = "Hello, world!"
+    let la:LocalAuth = LocalAuth()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        Text("\(message)")
+            .multilineTextAlignment(.center)
+        Button("LocalAuthentication") {
+            la.evaluate { result in
+                message = result
+            }
         }
         .padding()
+        .accentColor(Color.white)
+        .background(Color.blue)
     }
 }
 
@@ -24,3 +30,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

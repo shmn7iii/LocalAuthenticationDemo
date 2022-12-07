@@ -11,6 +11,7 @@
 		D781F26E2940A6B00007E58B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D781F26D2940A6B00007E58B /* ContentView.swift */; };
 		D781F2702940A6B00007E58B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D781F26F2940A6B00007E58B /* Assets.xcassets */; };
 		D781F2732940A6B00007E58B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D781F2722940A6B00007E58B /* Preview Assets.xcassets */; };
+		D781F27A2940A6C60007E58B /* LocalAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D781F2792940A6C60007E58B /* LocalAuth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		D781F26D2940A6B00007E58B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D781F26F2940A6B00007E58B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D781F2722940A6B00007E58B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D781F2792940A6C60007E58B /* LocalAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				D781F26B2940A6B00007E58B /* LocalAuthenticationDemoApp.swift */,
 				D781F26D2940A6B00007E58B /* ContentView.swift */,
+				D781F2792940A6C60007E58B /* LocalAuth.swift */,
 				D781F26F2940A6B00007E58B /* Assets.xcassets */,
 				D781F2712940A6B00007E58B /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				D781F26E2940A6B00007E58B /* ContentView.swift in Sources */,
 				D781F26C2940A6B00007E58B /* LocalAuthenticationDemoApp.swift in Sources */,
+				D781F27A2940A6C60007E58B /* LocalAuth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +271,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LocalAuthenticationDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 4UYZLKAJST;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "test for local authentication";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,8 +301,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LocalAuthenticationDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 4UYZLKAJST;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "test for local authentication";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
