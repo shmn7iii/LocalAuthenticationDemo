@@ -9,13 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     @State var message = "Hello, world!"
-    let la:LocalAuth = LocalAuth()
 
     var body: some View {
         Text("\(message)")
             .multilineTextAlignment(.center)
         Button("LocalAuthentication") {
-            la.evaluate { result in
+            LocalAuth().evaluate { result in
                 message = result
             }
         }
